@@ -1,86 +1,58 @@
-# Book Dataset - Task 1
+# Book Cover Dataset
 
-[Top](/../../)
+This dataset contains 207,572 books from the Amazon.com, Inc. marketplace.
 
-[Results](/../../blob/master/docs/results.md)
+## Challenges
 
-## Task 1: Classification
+[Results and related papers](docs/results.md)
 
-### A. Book Cover Image to Genre (BookCover30)
+### Task 1: Classification
 
-This task is to explore the entire book database. There are 57,000 books in 30 classes. This dataset contains book cover images, title, author, and subcategories for each respective book.
+#### A. Book Cover Image to Genre (BookCover30)
 
-#### File Structure
+The purpose of this task is to classify the books by the cover image. The BookCover30 dataset contains 57,000 book cover images divided into 30 classes. The training set and test set is split into 90% - 10% respectively.
 
->book30-listing-train.csv
->book30-listing-test.csv
+[Technical details](./Task1)
 
-Training set and test set with all attributes including image URL, title, author, and category.
+### Task 2: Data Mining
 
-Format:
+#### Data Mining (Book32)
+
+This task is to explore the entire book database. There are 207,572 books in 32 classes. This dataset contains book cover images, title, author, and category for each respective book.
+
+[Technical details](./Task2)
+
+## Use
+
+### Full Images
+
+Due to size constraints, the full images aren't available in this repository. However, we provide label files with URLs to the images hosted on Amazon. Note, the fidelity of the images cannot be guarenteed. A script to download them can be found in [scripts](./scripts).
+
+### (224 x 224 x 3) Images
+
+Resized images for the BookCover30 dataset are available in this download.
+
+[Download](https://drive.google.com/a/human.ait.kyushu-u.ac.jp/file/d/1LVWYXn2WdF-7NuLbl_LyyEwXSvIJUdPr/view?usp=sharing) (657 MB)
+
+## Citation
+
+[Paper on arXiv](https://arxiv.org/abs/1610.09204)
+
+B. K. Iwana, S. T. Raza Rizvi, S. Ahmed, A. Dengel, and S. Uchida, "Judging a Book by its Cover," *arXiv preprint arXiv:1610.09204 (2016)*.
+
 ```
-"[AMAZON INDEX (ASIN)}","[FILENAME]","[IMAGE URL]","[TITLE]","[AUTHOR]","[CATEGORY ID]","[CATEGORY]"
+@article{iwana2016judging,
+  title={Judging a Book by its Cover},
+  author={Iwana, Brian Kenji and Raza Rizvi, Syed Tahseen and Ahmed, Sheraz and Dengel, Andreas and Uchida, Seiichi},
+  journal={arXiv preprint arXiv:1610.09204},
+  year={2016}
+}
 ```
 
-Example:
-```
-"1588345297","1588345297.jpg","http://ecx.images-amazon.com/images/I/51l6XIoa3rL.jpg","With Schwarzkopf: Life Lessons of The Bear","Gus Lee","1","Biographies & Memoirs"
-"1404803335","1404803335.jpg","http://ecx.images-amazon.com/images/I/51UJnL3Tx6L.jpg","Magnets: Pulling Together, Pushing Apart (Amazing Science)","Natalie M. Rosinsky","4","Children's Books"
-```
+## Contact
 
->bookcover30-labels-train.txt
->bookcover30-labels-test.txt
+brian.k.iwana@human.ait.kyushu-u.ac.jp
 
-Simplified training set and test set ground truth listed by image name and class number (listed below).
+## Disclaimer
 
-Format:
-```
-[FILENAME] [CLASS NO.]
-```
-
-Example:
-```
-1588345297.jpg 1
-1404803335.jpg 4
-```
-
-#### Category ID
-
-30 classes
-
-Training - 51,300 Total
-
-Test - 5,700 Total
-
-|Label|Category Name|Training Size|Test Size|
-|---|---|---|---|
-|0|Arts & Photography|1,710|190|
-|1|Biographies & Memoirs|1,710|190|
-|2|Business & Money|1,710|190|
-|3|Calendars|1,710|190|
-|4|Children's Books|1,710|190|
-|5|Comics & Graphic Novels|1,710|190|
-|6|Computers & Technology|1,710|190|
-|7|Cookbooks, Food & Wine|1,710|190|
-|8|Crafts, Hobbies & Home|1,710|190|
-|9|Christian Books & Bibles|1,710|190|
-|10|Engineering & Transportation|1,710|190|
-|11|Health, Fitness & Dieting|1,710|190|
-|12|History|1,710|190|
-|13|Humor & Entertainment|1,710|190|
-|14|Law|1,710|190|
-|15|Literature & Fiction|1,710|190|
-|16|Medical Books|1,710|190|
-|17|Mystery, Thriller & Suspense|1,710|190|
-|18|Parenting & Relationships|1,710|190|
-|19|Politics & Social Sciences|1,710|190|
-|20|Reference|1,710|190|
-|21|Religion & Spirituality|1,710|190|
-|22|Romance|1,710|190|
-|23|Science & Math|1,710|190|
-|24|Science Fiction & Fantasy|1,710|190|
-|25|Self-Help|1,710|190|
-|26|Sports & Outdoors|1,710|190|
-|27|Teen & Young Adult|1,710|190|
-|28|Test Preparation|1,710|190|
-|29|Travel|1,710|190|
+All book cover images are hosted by and copyright Amazon.com, Inc. The the use of the book cover images is fair use for academic purposes.
