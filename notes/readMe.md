@@ -8,7 +8,7 @@ Scores for the pre-trained BertClassifier(), trained on 5, 10 and 20 epochs.
 
 | Epochs | Accuracy |
 | ------ | ------ |
-| 5 | 58.3% |
+| 5 | 58.5% |
 | 10 | 56.8% |
 | 20 | 56.5% |
 
