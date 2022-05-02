@@ -76,9 +76,9 @@ To get dataset, clone the repository:
 │   ├──  paper
 │   │   ├──   KBiczysko_JSikora_aics_final.pdf
 │   ├──  plots
-│   │   ├──   
-│   │   ├──   
-│   │   ├──  
+│   │   ├──   output_matrix_bert.png
+│   │   ├──   output_matrix_multimodal.png
+│   │   ├──   output_matrix_resnet.png
 ├── readme.md
 ```
 ## Citation
